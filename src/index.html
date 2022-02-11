@@ -2,34 +2,171 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Legszerviz Industrial Filtering and Ventillation</title>
-  <meta name="author" content="Zoltan Kerezsi, Peter Simon">
-  <meta name="description" content="Our activity covers the fields of ventilation, dust technology, dust separation, ventilation technology and noise reduction. We have decades of professional experience and a wide range of references in the field of design and construction of ventilation systems, adjustment of ventilation systems, preparation of environmental noise measurements, noise protection plans, design and construction of noise protection equipment.">
-  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
-  <link rel="stylesheet" href="/styles.css">
-  <script defer src="/main.js" type="module"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legszerviz Industrial Filtering and Ventilation</title>
+    <link rel="icon" href="logo.svg" />
+    <meta name="author" content="Zoltan Kerezsi, Peter Simon" />
+    <meta name="description"
+        content="Our activity covers the fields of ventilation, dust technology, dust separation, ventilation technology and noise reduction. We have decades of professional experience and a wide range of references in the field of design and construction of ventilation systems, adjustment of ventilation systems, preparation of environmental noise measurements, noise protection plans, design and construction of noise protection equipment." />
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+    <script src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <script>
+        var ceos = [
+            {
+                name: 'Zoltan Kerezsi',
+                email: 'zoltan.kerezsi@legszervizifv.eu',
+                intro: 'Introduction text',
+                image: 'https://www.gravatar.com/avatar/615a66bfb962dd076528cf2a6f76572d'
+            },
+            {
+                name: 'Peter Simon',
+                email: 'peter.simon@legszervizifv.eu',
+                intro: 'Introduction text',
+                image: 'https://www.gravatar.com/avatar/e2e8890a6e13669e9d4b2edb0121b43c'
+            }
+        ]
+    </script>
+    <style>
+        .hero-image {
+            background-image: url(/20210716_110927.jpg);
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .logo {
+            height: 60px;
+            width: 60px;
+            flex-shrink: 0;
+        }
+
+        @media only screen and (max-width: 900px) {
+            nav {
+                display: none;
+            }
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+        }
+
+        section {
+            scroll-margin-top: 4em;
+        }
+    </style>
 </head>
 
-<body>
-  <main class="athelas">
-    <div class="vh-100 dt w-100 tc bg-dark-gray cover flex items-end flex-column-reverse" style="background:url(/20210716_110927.jpg) no-repeat center;">
-      <article class="mw7 ph3 ph5-ns tc br2 pa4 bg-washed-blue navy ma4 flex flex-column">
-        <h1 class="fw6 f3 f2-ns lh-title mt0 mb3">
-          This site is under construction
-        </h1>
-        <h2 class="fw2 f4 lh-copy mt0 i mb0">
-          Please revisit later.
-        </h2>
-        <h2 class="fw2 f4 lh-copy ma2">
-          Legszerviz Industrial Filtering and Ventillation
-        </h2>
-        <a href="mailto:peter.simon@legszervizifv.eu" class="link b dim navy-70 lh-solid pa1">peter.simon@legszervizifv.eu</a>
-        <a href="mailto:zoltan.kerezsi@legszervizifv.eu" class="link b dim navy-70 lh-solid pa1">zoltan.kerezsi@legszervizifv.eu</a>
-      </article>
-    </div>
-  </main>
+<body class="bg-white">
+    <header class="w-100 flex items-center justify-between pa2 ph4-m ph5-l bb bg-white">
+        <div class="flex items-center">
+            <img class="logo" src="/logo.svg" alt="Legszerviz IFV Kft." />
+            <div>
+                <span class="code f4 b navy">Legszerviz IFV Kft.</span>
+                <br />
+                <span class="code f5 mid-gray">Industrial Filtering and Ventilation</span>
+            </div>
+        </div>
+        <nav>
+            <a class="avenir link dim mid-gray pa3 f4" href="#services" title="Services">Services</a>
+            <a class="avenir link dim mid-gray pa3 f4" href="#references" title="References">References</a>
+            <a class="avenir link dim mid-gray pa3 f4" href="#contact-us" title="Contact us">Contact us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-image">
+            <div style="background-color: rgba(12, 20, 37, 0.733)">
+                <div class="center mw8 pa4">
+                    <h1 class="code mt0 white f2">Legszerviz</h1>
+                    <h2 class="avenir white">Industrial Filtering and Ventilation</h2>
+                    <p class="avenir lh-copy white f4">
+                        Our activity covers the fields of ventilation, dust technology, dust separation, ventilation
+                        technology
+                        and noise reduction. We have decades of professional experience and a wide range of references
+                        in the
+                        field of design and construction of ventilation systems, adjustment of ventilation systems,
+                        preparation of
+                        environmental noise measurements, noise protection plans, design and construction of noise
+                        protection
+                        equipment.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="mw8 center ph4 pv1">
+            <h1 class="code f2">Services</h1>
+            <p class="avenir lh-copy f4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt ultricies dolor, vitae
+                tempor metus consequat rhoncus. Nulla facilisi. Sed fermentum magna nec posuere porttitor. Morbi aliquet
+                justo rhoncus gravida fringilla. Fusce ac eleifend sapien, eget volutpat nisi. Suspendisse rutrum purus
+                justo, vel interdum lorem volutpat at. Etiam hendrerit tincidunt tristique. Proin eu turpis quis neque
+                finibus porta. Nullam bibendum arcu magna, sed laoreet dui mollis eget. Nam id ex ante.
+
+                Nunc vel massa accumsan, tristique arcu eu, gravida neque. Sed in gravida purus. Vivamus condimentum
+                purus purus, ac scelerisque tellus feugiat sit amet. Donec venenatis nunc vitae molestie rutrum. Mauris
+                euismod felis ac libero tincidunt, eu venenatis risus blandit. Suspendisse at vestibulum tellus. Ut
+                ornare urna sed neque auctor, non condimentum felis fringilla. In hac habitasse platea dictumst.
+                Maecenas volutpat lorem in enim elementum varius. Vivamus aliquet neque et nunc ultricies, ut
+                condimentum diam cursus. In hac habitasse platea dictumst. Ut luctus id diam vel consectetur. Quisque ut
+                tincidunt diam. Vivamus semper consectetur ipsum sed ullamcorper. Ut eget dolor et ex porta tempor eget
+                ac purus.
+
+                Sed arcu tellus, facilisis rhoncus massa a, porta facilisis erat. Quisque ante tellus, eleifend eget
+                augue a, aliquet malesuada purus. Sed hendrerit rhoncus tristique. Phasellus posuere ut odio vitae
+                scelerisque. Etiam interdum quam vel nunc sollicitudin, a maximus leo condimentum. Ut eget aliquet est,
+                ac pharetra ante. Nulla sit amet lectus eu tortor cursus vehicula ut eget nisi. In quis vehicula mi.
+                Nullam posuere tellus a dui pharetra, ac lobortis mi consectetur. Sed semper et mi non sagittis.
+                Maecenas facilisis erat ipsum, eu ornare lacus vehicula id. Aliquam sit amet nisi vel ante maximus
+                dapibus.
+
+                Donec vel est non dolor bibendum egestas quis vitae ipsum. Aenean vitae ipsum quis purus tempor varius.
+                Praesent accumsan est lacus, ac ultrices velit imperdiet vitae. Proin iaculis pulvinar volutpat. Morbi
+                nisi ligula, porttitor accumsan orci non, eleifend volutpat odio. Quisque condimentum porta nibh, nec
+                interdum purus rutrum vitae. Donec vitae elit odio. Aliquam venenatis, tellus sollicitudin vehicula
+                tincidunt, enim augue hendrerit neque, vel pretium nisl nunc non ante. Nunc suscipit, risus sit amet
+                accumsan varius, diam ante efficitur eros, sed convallis turpis nisi nec ex. In hac habitasse platea
+                dictumst. Sed ullamcorper sed diam in ornare. Aliquam bibendum tempus purus ut consectetur. In ac mollis
+                lorem, et semper sapien.
+
+                Sed tempus mauris ut convallis maximus. Fusce eget maximus ante. Sed nisi purus, tempus sit amet mollis
+                in, ornare nec magna. Duis enim lectus, laoreet eu eleifend eu, rutrum vitae purus. Vestibulum aliquam,
+                erat at mollis congue, metus dolor rhoncus lacus, id tincidunt est ligula pellentesque dolor.
+                Suspendisse vulputate auctor dignissim. Aenean mollis gravida justo non consequat. Mauris faucibus a
+                urna ac dignissim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                egestas. Quisque ac porttitor dui. Proin risus tortor, mollis a auctor vitae, vestibulum sodales sem.
+            </p>
+        </section>
+
+        <section id="references" class="mw8 center ph4 pv1">
+            <h1 class="code f2">References</h1>
+        </section>
+
+        <section id="contact-us" class="mw8 center ph4 pv1">
+            <h1 class="code f2">Contact us</h1>
+            <div class="flex flex-row ">
+                <template x-for="person in ceos">
+                    <article class="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+                        <div class="tc">
+                            <img x-bind:src="person.image" class="br-100 h4 w4 dib" x-bind:title="person.name" />
+                            <h1 class="avenir f4" x-text="person.name"></h1>
+                            <hr class="mw2" />
+                        </div>
+                        <p class="avenir lh-copy measure center f6 black-70" x-text="person.intro"></p>
+                    </article>
+                </template>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pv4 ph3 ph5-m ph6-l bg-dark-gray">
+        <div class="avenir f6 db tc white">
+            Copyright © <span x-text="new Date().getFullYear()"></span> Legszerviz Industrial Filtering and
+            Ventilation
+            Kft.
+        </div>
+    </footer>
 </body>
 
 </html>
